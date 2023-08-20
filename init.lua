@@ -1,1 +1,2 @@
+-- require("shin")
 require("shinigami")

@@ -6,6 +6,10 @@ vim.g.loaded_netrwPlugin = 1
 vim.opt.termguicolors = true
 
 -- empty setup using defaults
-require("nvim-tree").setup()
+require("nvim-tree").setup({
+    filters = {
+        custom = {"^\\.git"}
+    }
+})
 
 vim.keymap.set('n', '<C-n>', ':NvimTreeFindFileToggle<CR>')
